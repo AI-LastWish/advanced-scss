@@ -58,6 +58,7 @@ body {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .heading-primary {
@@ -66,6 +67,7 @@ body {
 
     /* remove the shaking of the animation */
     backface-visibility: hidden;
+    margin-bottom: 60px;
 }
 
 .heading-primary-main {
@@ -93,34 +95,62 @@ body {
 }
 
 /* MoveIn annimation */
-@keyframes moveInLeft{
-    0%{
+@keyframes moveInLeft {
+    0% {
         opacity: 0;
         transform: translateX(-100px);
     }
 
-    80%{
+    80% {
         transform: translateX(10px);
     }
 
-    100%{
+    100% {
         opacity: 1;
         transform: translate(0);
     }
 }
 
-@keyframes moveInRight{
-    0%{
+@keyframes moveInRight {
+    0% {
         opacity: 0;
         transform: translateX(100px);
     }
 
-    80%{
+    80% {
         transform: translateX(-10px);
     }
 
-    100%{
+    100% {
         opacity: 1;
         transform: translate(0);
     }
+}
+
+/* BUTTON */
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    /* equal to transition: transform .2s */
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translate(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
 }
