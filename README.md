@@ -3,7 +3,7 @@
 git reset --hard HEAD~1
 git push origin master --force
 
-#https://github.com/jonasschmedtmann/advanced-css-course
+https://github.com/jonasschmedtmann/advanced-css-course
 
 # Three Pillars of writing good CSS
     1. Responsive design
